@@ -1,15 +1,5 @@
 #include<iostream>
 using namespace std;
-int main()
-{
-    int fact(int );
-    int n,f;
-    cout<<"enter a number:";
-    cin>>n;
-    f=fact(n);
-    cout<<"factorial of "<<n<<" is :"<<f;
-    return 0;
-}
 int fact(int x)
 {
     if(x<0)
@@ -25,4 +15,14 @@ int fact(int x)
         return (x*fact(x-1));
     }
 
+}
+int main()
+{
+    //int fact(int );
+    int n,f;
+    cout<<"enter a number:";
+    cin>>n;
+    f=fact(n);
+    cout<<"factorial of "<<n<<" is :"<<f;
+    return 0;
 }
